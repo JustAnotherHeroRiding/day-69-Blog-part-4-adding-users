@@ -82,8 +82,8 @@ class Comment(db.Model):
     blog = db.relationship("BlogPost", back_populates="comments")
     
 
-with app.app_context():
-    db.create_all()
+#with app.app_context():
+    #db.create_all()
 
 
 def admin_required(func):
